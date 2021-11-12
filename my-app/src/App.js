@@ -1,6 +1,7 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbar from './Components/NavBar'
 import Cards from './Components/Cards/Cards'
 import Heading1 from './Components/Heading1'
 import Heading2 from './Components/Heading2'
@@ -11,6 +12,7 @@ import {Container} from 'react-bootstrap'
 function App() {
   return (
     <Container>
+      <Navbar/>
       <Heading1/>
       <Cards/>
       <Heading2/>

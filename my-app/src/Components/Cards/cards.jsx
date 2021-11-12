@@ -1,7 +1,7 @@
 import { Component } from 'react'
-import harryPotterCards from './HarryPotterCards'
+import HarryPotterCards from './HarryPotterCards'
 
-class cards extends Component {
+class Cards extends Component {
     state = {
         harryPotter: []
     }
@@ -25,10 +25,13 @@ class cards extends Component {
         }
     }
     render() {
-        <div>
-            <HarryPotterCards displayData={this.state.harryPotter}/>
-        </div>
+        return (
+            <div>
+                <HarryPotterCards displayData={this.state.harryPotter}/>
+            </div>
+        )
+
     }
 }
 
-export default cards
+export default Cards

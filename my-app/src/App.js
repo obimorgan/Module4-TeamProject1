@@ -1,7 +1,7 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Cards from './Components/Cards'
+import Cards from './Components/Cards/Cards'
 
 function App() {
   return (

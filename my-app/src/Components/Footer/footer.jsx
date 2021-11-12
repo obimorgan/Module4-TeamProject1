@@ -1,5 +1,5 @@
 import React from "react";
-export default function MyFooter() {
+export default function footer() {
     return (
     <footer classname="d-flex bg-dark">
     <div classname="container" id="footer">

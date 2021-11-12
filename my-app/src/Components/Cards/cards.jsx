@@ -7,10 +7,10 @@ class Cards extends Component {
     }
 
     componentDidMount () {
-        this.fetchData()
+        this.fetchHarryPotter()
     }
     
-    fetchData = async () => {
+    fetchHarryPotter = async () => {
         try {
             const response = await fetch ("http://www.omdbapi.com/?i=tt3896198&apikey=907b4b85&s=harry")
             if (response.ok) {

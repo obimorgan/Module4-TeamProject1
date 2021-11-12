@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import netflix_Logo_RGB from './src/assets'
+// import netflix_Logo_RGB from './Components/NavBar/netflix_Logo_RGB ' ;
 import { Container,Nav, Navbar, Button, NavDropdown, Dropdown, DropdownButton,Form,} from "react-bootstrap";
 
 
@@ -10,10 +10,10 @@ class NavBar extends Component{
     render (){
         return (
             <>
-           <Navbar bg="" variant="dark" expand="lg">
+           <Navbar bg="dark" variant="dark" expand="lg">
           <Container fluid>
             <img
-              src=""
+              src= "https://w7.pngwing.com/pngs/119/342/png-transparent-logo-netflix-nasdaq-nflx-brand-television-copywriter-floor-television-text-rectangle.png"
               alt=""
               width="150px"
               height="80px"

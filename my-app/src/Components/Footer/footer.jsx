@@ -1,7 +1,7 @@
 import React from "react";
 export default function footer() {
     return (
-    <footer classname="d-flex bg-dark">
+  
     <div classname="container" id="footer">
       <div classname="row justify-content-center">
         <div classname="col-8" id="footer-icons">
@@ -14,7 +14,7 @@ export default function footer() {
           <div classname="col-12 col-sm-6 col-md-4 col-lg-3">
             <ul>
               <li>Info</li>
-              <li>Meida Center</li>
+              <li>Media Center</li>
               <li>Privacy</li>
               <li>Contact Us</li>
             </ul>
@@ -45,7 +45,7 @@ export default function footer() {
       </div>
       <p classname="copyright text-secondary">© 2021 Netflix, inc.</p>
     </div>
-  </footer>
+
   
         );
 }

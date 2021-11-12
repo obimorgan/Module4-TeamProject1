@@ -26,7 +26,7 @@ class cards extends Component {
     }
     render() {
         <div>
-            <harryPotterCards/>
+            <harryPotterCards displayData={this.state.harryPotter}/>
         </div>
     }
 }

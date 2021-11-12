@@ -5,7 +5,10 @@ import { Button, Card, Row, Col, Container } from "react-bootstrap";
 const HarryPotterCards = ({ displayData }) => (
   <div className="d-flex">
     {displayData.map((data) => (
-      <Card style={{ width: "18rem" }}>
+      <Card 
+      style={{ width: "18rem" }}
+      key={data.imdbID}
+      >
         <Card.Img variant="top" src={data.Poster} />
         {/* <Card.Body>
           <Card.Title>Card Title</Card.Title>

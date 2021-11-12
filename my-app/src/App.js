@@ -1,7 +1,7 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Navbar from './Components/NavBar'
+import Navbar from './Components/NavBar/Navbar'
 import Cards from './Components/Cards/Cards'
 import Heading1 from './Components/Heading1'
 import Heading2 from './Components/Heading2'

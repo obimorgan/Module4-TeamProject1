@@ -1,6 +1,6 @@
-import Cards from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card'
 
-const harryPotterCards = ({object}) => (
+const HarryPotterCards = ({object}) => (
     <div>
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src="holder.js/100px180" />
@@ -12,8 +12,8 @@ const harryPotterCards = ({object}) => (
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
             </Card.Body> */}
-            </Card>
+        </Card>
     </div>
 )
 
-export default harryPotterCards
+export default HarryPotterCards

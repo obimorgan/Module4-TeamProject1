@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import harryPotterCards from '../Cards/harryPotterCards'
+import harryPotterCards from './HarryPotterCards'
 
 class cards extends Component {
     state = {
@@ -26,7 +26,7 @@ class cards extends Component {
     }
     render() {
         <div>
-            <harryPotterCards displayData={this.state.harryPotter}/>
+            <HarryPotterCards displayData={this.state.harryPotter}/>
         </div>
     }
 }

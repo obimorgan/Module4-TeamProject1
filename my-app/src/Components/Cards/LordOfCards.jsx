@@ -2,27 +2,27 @@
 
 import { Component } from "react";
 import Card from "react-bootstrap/Card";
-import HarryPotterItem from "./HaryPotterItem";
+import LordOfItem from "./LordOfItem";
 
-class HarryPotterCards extends Component {
+class LordOfCards extends Component {
   state = {
-    harryPotterData: []
+    LordOfData: []
   };
 
   componentDidMount() {
-    this.fetcHarry();
+    this.fetchLord();
   }
 
-  fetcHarry = async () => {
+  fetchLord = async () => {
     try {
       const response = await fetch(
-        "http://www.omdbapi.com/?i=tt3896198&apikey=907b4b85&s=harry"
+        "http://www.omdbapi.com/?i=tt3896198&apikey=907b4b85&s=Lord"
       );
       if (response.ok) {
         const data = await response.json();
         console.log(data.Search);
 
-        this.setState({ harryPotterData: data.Search });
+        this.setState({ LordOfData: data.Search });
       } else {
         throw response;
       }
@@ -32,10 +32,9 @@ class HarryPotterCards extends Component {
   };
   render() {
     return (
-      
-      <>
+        <>
         {
-            <HarryPotterItem harryPotterData={this.state.harryPotterData}/>
+            <LordOfItem LordOfData={this.state.LordOfData}/>
         }
       
       </>
@@ -43,4 +42,4 @@ class HarryPotterCards extends Component {
   }
 }
 
-export default HarryPotterCards
+export default LordOfCards

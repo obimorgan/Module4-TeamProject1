@@ -2,25 +2,31 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './Components/NavBar/Navbar'
-import Cards from './Components/Cards/Cards'
 import Heading1 from './Components/Heading1'
 import Heading2 from './Components/Heading2'
 import Heading3 from './Components/Heading3'
 import {Container} from 'react-bootstrap'
+import Horror from './Components/Cards/Horror'
+import HarryPotterCards from './Components/Cards/HarryPotterCards'
+import LordOfCards from './Components/Cards/LordOfCards'
+
+
 
 
 function App() {
   return (
-    <Container>
+    <Container fluid>
       <Navbar/>
+      <div>
       <Heading1/>
-      <Cards/>
+      <Horror/>
       <Heading2/>
-      <Cards/>
+      <HarryPotterCards/>
       <Heading3/>
-      <Cards/>
-
+      <LordOfCards/>
+      </div>
     </Container>
+    
   );
 }
 

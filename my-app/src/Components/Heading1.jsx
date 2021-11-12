@@ -2,9 +2,9 @@
 
 const Heading1 = (props) => (
     <div>
-        <h1>
+        <h4>
             New Release
-        </h1>
+        </h4>
     </div>
 )
 

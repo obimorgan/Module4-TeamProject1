@@ -2,12 +2,14 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Cards from './Components/Cards/Cards'
+import {Container} from 'react-bootstrap'
+
 
 function App() {
   return (
-    <div>
+    <Container>
       <Cards/>
-    </div>
+    </Container>
   );
 }
 

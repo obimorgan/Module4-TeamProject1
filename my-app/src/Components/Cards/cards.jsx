@@ -15,8 +15,9 @@ class Cards extends Component {
             const response = await fetch ("http://www.omdbapi.com/?i=tt3896198&apikey=907b4b85&s=harry")
             if (response.ok) {
                 const data = await response.json()
-                console.log(data)
-                this.setState({harryPotter: data})
+                console.log(data.Search)
+                
+                this.setState({harryPotter: data.Search})
             } else {
                 throw response
             }
@@ -26,9 +27,10 @@ class Cards extends Component {
     }
     render() {
         return (
-            <div>
+            <>
                 <HarryPotterCards displayData={this.state.harryPotter}/>
-            </div>
+               
+            </>
         )
 
     }

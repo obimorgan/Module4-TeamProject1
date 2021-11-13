@@ -9,6 +9,7 @@ import {Container} from 'react-bootstrap'
 import Horror from './Components/Cards/Horror'
 import HarryPotterCards from './Components/Cards/HarryPotterCards'
 import LordOfCards from './Components/Cards/LordOfCards'
+import SearchBar from './Components/SearchBar/SearchBar'
 
 
 
@@ -17,6 +18,9 @@ function App() {
   return (
     <Container fluid>
       <Navbar/>
+      <div>
+      <SearchBar/>
+      </div>
       <div>
       <Heading1/>
       <Horror/>

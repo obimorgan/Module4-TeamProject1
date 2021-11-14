@@ -13,13 +13,13 @@ import LordOfCards from "./Components/Cards/LordOfCards";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import styled from "styled-components";
 
-const styledBody = styled.body`
-  background: black;
+const StyledBody = styled.body`
+  background: rgb(14,14,14);
 `
 
 function App() {
   return (
-    <styledBody>
+    <StyledBody>
       <Container fluid>
         <Navbar />
         <div>
@@ -38,7 +38,7 @@ function App() {
           <LordOfCards />
         </div>
       </Container>
-    </styledBody>
+    </StyledBody>
   );
 }
 

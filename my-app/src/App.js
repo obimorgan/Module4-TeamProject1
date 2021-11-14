@@ -3,15 +3,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Components/NavBar/Navbar";
-import Heading1 from "./Components/Heading1";
-import Heading2 from "./Components/Heading2";
-import Heading3 from "./Components/Heading3";
 import { Container } from "react-bootstrap";
 import Horror from "./Components/Cards/Horror";
 import HarryPotterCards from "./Components/Cards/HarryPotterCards";
 import LordOfCards from "./Components/Cards/LordOfCards";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import styled from "styled-components";
+import Heading from "./Components/Heading"
 
 const StyledBody = styled.body`
   background: rgb(14,14,14);
@@ -26,15 +24,15 @@ function App() {
           <SearchBar />
         </div>
         <div>
-          <Heading1 />
+          <Heading title="Horror"/>
           <Horror />
         </div>
         <div>
-          <Heading2 />
+          <Heading title="Harry Potter"/>
           <HarryPotterCards />
         </div>
         <div>
-          <Heading3 />
+          <Heading title="Popular"/>
           <LordOfCards />
         </div>
       </Container>

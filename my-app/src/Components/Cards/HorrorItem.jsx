@@ -1,14 +1,39 @@
 /** @format */
 
 import { Button, Card, Row, Col, Container } from "react-bootstrap";
+import Carousel from 'react-bootstrap/Carousel'
+
+
 
 const HorrorItem = ({ horrorData }) => (
-  <div className="d-flex">
-    {horrorData.slice(0, 6).map((data) => (
-        <Card style={{ width: "250px", maxHeight: "150px"}} className="mb-2 mx-1">
-          <Card.Img style={{objectFit: "cover"}} className="img-fluid" variant="top" src={data.Poster} />
-        </Card>
-    ))}
+  function ControlledCarousel() {
+    const [index, setIndex] = useState(0);
+  
+    const handleSelect = (selectedIndex, e) => {
+      setIndex(selectedIndex);
+    }
+  }
+  <div>
+    <Carousel activeIndex={false} className="d-flex">
+      <Carousel.Item>
+        {horrorData.slice(0, 6).map((data) => (
+          <img
+            className="w-20"
+            src={data.Poster}
+            alt="First slide"
+          />
+        ))}
+      </Carousel.Item>
+      <Carousel.Item>
+        {horrorData.slice(4, 10).map((data) => (
+          <img
+            className="w-10"
+            src={data.Poster}
+            alt="First slide"
+          />
+        ))}
+      </Carousel.Item>
+    </Carousel>
   </div>
 );
 

@@ -1,6 +1,7 @@
 /** @format */
 
 import { Component } from "react";
+import { Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import HorrorItem from './HorrorItem'
 
@@ -34,7 +35,10 @@ class Horror extends Component {
     return (
       <>
         {
+          <Row>
             <HorrorItem horrorData={this.state.horrorData}/>
+          </Row>
+            
         }
       </>
     );
